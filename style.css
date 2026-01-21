@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+@font-face {
+    font-family: 'founders';
+    src: url('public/fonts/founders-grotesk-condensed-medium.woff2') format('woff2'),
+}
+@font-face {
+    font-family: 'founders-regular';
+    src: url('public/fonts/founders-grotesk-condensed-regular.woff2') format('woff2'),
+}
+@font-face {
+    font-family: 'founders-semibold';
+    src: url('public/fonts/founders-grotesk-condensed-semibold.woff2') format('woff2'),
+}
+
+.custom-shape-divider-top-1768840304 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.can {
+  will-change: transform;
+  animation: 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes canFloat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 1.8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(2px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.6; }
+}
+
+
+.can-floating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.can-img {
+  width: 920px;
+  will-change: transform;
+}
+
+.carousel-card {
+  background-color: transparent;
+}
+
+.carousel-card.is-active {
+  background-color: white;
+  /* transform: scale(1.08); */
+  z-index: 20;
+}
+
+
+
