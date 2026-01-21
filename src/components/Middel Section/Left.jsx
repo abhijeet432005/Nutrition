@@ -4,21 +4,21 @@ import Magnet from "../Magnet/Magnet";
 const Left = () => {
   const video = [
     {
-      url: "public/Videos/SnapInsta.to_3.mp4",
+      url: "/Videos/SnapInsta.to_3.mp4",
       top: 20,
       left: 25,
       rotate: 12,
       index: 9,
     },
     {
-      url: "public/Videos/SnapInsta.to_2.mp4",
+      url: "/Videos/SnapInsta.to_2.mp4",
       top: 40,
       left: 10,
       rotate: -10,
       index: 8,
     },
     {
-      url: "public/Videos/SnapInsta.to_1.mp4",
+      url: "/Videos/SnapInsta.to_1.mp4",
       top: 25,
       left: 0,
       rotate: 0,

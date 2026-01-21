@@ -32,11 +32,11 @@ const Right = () => {
             {
                 Array.from({length: 5}).map((_, i) => (
                     <div key={i}>
-                        <img src="public/Stars/icon-star.svg" alt="" srcset="" />
+                        <img src="/Stars/icon-star.svg" alt="" srcset="" />
                     </div>
                 ))
             }
-            <img src="public/Stars/icon-star-half.svg" alt="" srcset="" />
+            <img src="/Stars/icon-star-half.svg" alt="" srcset="" />
         </div>
 
         <p className="font-[founders-regular] text-xl border-b text-[#335C30]">3158 Reviews</p>

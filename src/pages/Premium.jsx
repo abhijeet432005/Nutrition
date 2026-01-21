@@ -99,17 +99,17 @@ useEffect(() => {
     <div className="relative w-full h-[160vh] bg-[#E7EFE4] overflow-hidden">
 
         <div className="absolute top-10 w-56 float left-[50%] -translate-x-1/2 z-30 ">
-            <img src="public/End Section/testimonial-signature.svg" alt=""  />
+            <img src="/End Section/testimonial-signature.svg" alt=""  />
         </div>
       {/* BACKGROUND */}
       <div className="absolute inset-0 h-[160vh] overflow-hidden">
         <img
-          src="public/End Section/premium.webp"
+          src="/End Section/premium.webp"
           className="absolute Image -top-20 h-[200vh] w-full object-cover"
           alt=""
         />
         <img
-          src="public/End Section/2.webp"
+          src="/End Section/2.webp"
           className="absolute Image -top-20 h-[200vh] w-full object-cover z-10"
           alt=""
         />

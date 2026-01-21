@@ -47,7 +47,7 @@ const Left = () => {
       }
 
       if (imgRef.current) {
-        imgRef.current.src = `public/Sequence of images/seq_0_${frame}.webp`;
+        imgRef.current.src = `/Sequence of images/seq_0_${frame}.webp`;
       }
     }, 60);
 
@@ -95,7 +95,7 @@ const Left = () => {
       <div>
         <img
           ref={imgRef}
-          src="public/Sequence of images/seq_0_97.webp"
+          src="/Sequence of images/seq_0_97.webp"
           alt=""
           className="absolute -top-50 left-25 w-full h-full rotate-12 "
         />
@@ -104,12 +104,12 @@ const Left = () => {
       <div>
         <div className="absolute left-10 -top-4">
           <img
-            src="public/home page/real Matcha, Origin al Taste.svg"
+            src="/home page/real Matcha, Origin al Taste.svg"
             className="-rotate-12 float"
             alt=""
           />
           <img
-            src="public/home page/stage-sketch-arrow.svg"
+            src="/home page/stage-sketch-arrow.svg"
             className="w-15 object-contain mt-4 ml-4 float rotate-15"
             alt=""
           />

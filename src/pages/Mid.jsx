@@ -16,8 +16,8 @@ const Mid = () => {
       </div>
 
       <div className="absolute bottom-5 right-50 w-44 h-30 float">
-        <img src="public/home page/sequence-why-people-love-it.svg" alt="" className=""  />
-        <img src="public/home page/sequence-why-people-arrow.svg" className="w-20" alt="" />
+        <img src="/home page/sequence-why-people-love-it.svg" alt="" className=""  />
+        <img src="/home page/sequence-why-people-arrow.svg" className="w-20" alt="" />
       </div>
       
     </div>

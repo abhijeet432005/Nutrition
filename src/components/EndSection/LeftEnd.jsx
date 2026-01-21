@@ -38,7 +38,7 @@ const LeftEnd = () => {
       className="w-[40vw] h-full bg-[#D7E4DB] rounded-[5px] relative"
     >
       <img
-        src="public/End Section/cup.webp"
+        src="/End Section/cup.webp"
         alt=""
         className="w-full absolute z-99"
       />
@@ -67,7 +67,7 @@ const LeftEnd = () => {
         </svg>
       </div>
       <img
-        src="public/End Section/cup2.webp"
+        src="/End Section/cup2.webp"
         alt=""
         className="w-full absolute"
       />

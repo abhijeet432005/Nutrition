@@ -56,17 +56,17 @@ const Navbar = () => {
     <div className="w-full flex justify-between items-center p-12">
       <div className="flex gap-1.5">
         <img
-          src="public/home page/instagram.svg"
+          src="/home page/instagram.svg"
           alt=""
           className=" bg-[#E7EFE4] rounded-full px-1.5 py-1.5 hover:-translate-y-3 duration-300"
         />
         <img
-          src="public/home page/tiktok.svg"
+          src="/home page/tiktok.svg"
           alt=""
           className=" bg-[#E7EFE4] rounded-full px-1.5 py-1.5 hover:-translate-y-3 duration-300"
         />
         <img
-          src="public/home page/youtube-svgrepo-com.svg"
+          src="/home page/youtube-svgrepo-com.svg"
           alt=""
           className="w-10 bg-[#E7EFE4] rounded-full px-1.5 py-1.5 hover:-translate-y-3 duration-300"
         />

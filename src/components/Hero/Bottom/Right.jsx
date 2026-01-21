@@ -13,7 +13,7 @@ const Right = () => {
         natural fiber that supports weight loss.
       </p>
       <div className='flex justify-end w-full'>
-        <img src="public/home page/Layer_1 (3).svg" className='float' alt="" />
+        <img src="/home page/Layer_1 (3).svg" className='float' alt="" />
 
       </div>
 
