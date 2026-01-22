@@ -74,6 +74,7 @@ const Left = () => {
     xSetters.current;
     ySetters.current;
   };
+  
   useEffect(() => {
     bubbleRefs.current.forEach((bubble, idx) => {
       if (!bubble) return;

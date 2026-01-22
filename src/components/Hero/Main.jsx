@@ -3,7 +3,7 @@ import More_SVG from "./More_SVG";
 import { ArrowUpRight } from "lucide-react";
 import Bottom from "./Bottom/Bottom";
 
-const Main = () => {
+const Main = ({ animate }) => {
   
   return (
     <div className="w-full relative">
@@ -25,7 +25,7 @@ const Main = () => {
 
       {/* bottom */}
 
-      <Bottom />
+      <Bottom animate={animate} />
     </div>
   );
 };

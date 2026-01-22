@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HeroPage from "./pages/HeroPage";
 import FloatingCan from "./pages/FloatingCan";
 import Mid from "./pages/Mid";
@@ -7,10 +7,13 @@ import Endsection from "./pages/Endsection";
 import ReactLenis from "lenis/react";
 import Loader from "./pages/Loader";
 import Premium from "./pages/Premium";
+import gsap from "gsap";
 
 const App = () => {
+  const heroRef = useRef(null);
   const [loading, setLoading] = useState(true);
-    useEffect(() => {
+  const [bottomAnimate, setBottomAnimate] = useState(false);
+  useEffect(() => {
     if (loading) {
       document.body.style.overflow = "hidden";
     } else {
@@ -20,25 +23,46 @@ const App = () => {
 
   useEffect(() => {
     if ("scrollRestoration" in window.history) {
-    window.history.scrollRestoration = "manual";
-  }
-  window.scrollTo(0, 0);
-}, []);
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    if (heroRef.current) {
+      gsap.set(heroRef.current, {
+        y: 120,
+        opacity: 0,
+      });
+    }
+  }, []);
+
+  const handleLoaderComplete = () => {
+    setLoading(false);
+
+    gsap.to(heroRef.current, {
+      y: 0,
+      opacity: 1,
+      duration: 1.1,
+      ease: "power4.out",
+      delay: 0.1,
+    });
+
+    setBottomAnimate(true)
+  };
 
   return (
     <div className="w-full min-h-screen relative overflow-hidden bg-[#ADC59B]">
-      
-
       {/* MAIN APP — ALWAYS MOUNTED */}
       <ReactLenis
         root
         options={{
-          lerp: 0.045,
+          lerp: 0.1,
           smoothWheel: true,
         }}
       >
-        {loading && <Loader onComplete={() => setLoading(false)} />}
-        <HeroPage />
+        {loading && <Loader onComplete={handleLoaderComplete} />}
+        <HeroPage bottomAnimate={bottomAnimate} />
 
         <div className="h-[30vh] relative">
           <div className="bg-[#E7EFE4] w-full absolute h-64"></div>
@@ -64,10 +88,7 @@ const App = () => {
         <FloatingCan />
         <Endsection />
         <Premium />
-
       </ReactLenis>
-
-      
     </div>
   );
 };

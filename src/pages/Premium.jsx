@@ -110,7 +110,7 @@ useEffect(() => {
         />
         <img
           src="/End Section/2.webp"
-          className="absolute Image -top-20 h-[200vh] w-full object-cover z-10"
+          className="absolute Image -top-20 h-[200vh] w-full object-cover z-40"
           alt=""
         />
       </div>

@@ -23,7 +23,7 @@ export default function CanFloating() {
       end: `+=${window.innerHeight * 12}`,
       pin: true,
       scrub: 1,
-      anticipatePin: 1,   // 🔥 IMPORTANT
+      anticipatePin: 1,   // IMPORTANT
     pinSpacing: true,
       onUpdate: (self) => {
         const index = Math.floor(self.progress * (TOTAL_FRAMES - 1));
@@ -84,7 +84,11 @@ export default function CanFloating() {
         </svg>
       </div>
       
+
       <img src={frames[frame]} className="can-img" alt="Can rotation" />
+
+
+      
     </section>
   );
 }
